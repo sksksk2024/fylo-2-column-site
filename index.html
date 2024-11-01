@@ -1,73 +1,178 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="font-open-sans min-h-screen">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Big+Shoulders+Display:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Big+Shoulders+Display:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Kumbh+Sans:wght@100..900&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Favicon -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./dist/output.css">
+  <link rel="stylesheet" href="./css/styles.css">
   
   <title>Frontend Mentor | Fylo landing page with two column layout</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
+<body class="3xs:text-sm 2xs:text-md lg:text-lg flex flex-col justify-center leading-7 pt-24P">
 
-  Features
-  Team
-  Sign In
+  <!-- Header -->
+  <header class="text-lg flex 3xs:flex-col sm:flex-row justify-between items-center gap-10 m-w-custom w-full mb-128M px-48P">
+    <img class="w-logo" src="./images/logo.svg" alt="fylo">
+    <ul class="flex 3xs:gap-2 2xs:gap-10 3xs:flex-col 2xs:flex-row">
+      <li>Features</li>
+      <li>Team</li>
+      <li>Sign In</li>
+    </ul>
+  </header>
 
-  All your files in one secure location, accessible anywhere.
+  <!-- Main -->
+  <main class="">
+    <!---- Section 1 ---->
+    <section class="flex 3xs:flex-col lg:flex-row-reverse justify-center items-center gap-10 3xs:text-center lg:text-start  mb-64M px-48P">
+      <img class="3xs:w-1/2 2xl:w-1/2 2xl:h-1/2 mx-auto" src="./images/illustration-1.svg" alt="security & accessible">
+      <aside class="flex flex-col gap-10 3xs:w-full 2xl:w-1/2">
+        <h1 class="3xs:text-xl xs:text-2xl sm:text-3xl leading-tight font-bold">
+          All your files in one secure location, accessible anywhere.
+        </h1>
 
-  Fylo stores your most important files in one secure location. 
-  Access them wherever you need, share and collaborate with friends, 
-  family, and co-workers.
+        <p class="text-lg">
+          Fylo stores your most important files in one secure location. 
+          Access them wherever you need, share and collaborate with friends, 
+          family, and co-workers.
+        </p>
 
-  Get Started
+        <form class="flex 3xs:flex-col lg:flex-row gap-8">
+          <input aria-label="put your email" class="border-1BW border-solid border-very-dark-blue p-16P text-red focus:outline-none focus:invalid:border-red focus:invalid:text-red placeholder-red px-24P rounded-5BR" type="email" placeholder="Enter your email..." />
 
-  Stay productive, wherever you are
+          <button class="p-16P text-white bg-bright-blue rounded-5BR font-semibold 3xs:text-lg lg:text-md" type="submit">
+            Get Started
+          </button>
+        </form>
+      </aside>
+    </section>
 
-  Never let location be an issue when accessing your files. Fylo has you 
-  covered for all of your file storage needs.
+    <!---- Section 2 ---->
+    <section class="flex flex-col justify-center items-center w-full">
+      <img aria-hidden="true" src="./images/bg-curve-desktop.svg" alt="curve">
 
-  Securely share files and folders with friends, family and colleagues for 
-  live collaboration. No email attachments required!
+      <div class="bg-light-grayish-blue p-10P flex 3xs:flex-col 2xl:flex-row-reverse w-full">
+        <img class="3xs:w-1/2 2xl:w-1/2 2xl:h-1/2 mx-auto" src="./images/illustration-2.svg" alt="productive">
 
-  See how Fylo works
+        <aside class="px-48P flex flex-col justify-center 3xs:items-center 2xl:items-start 2xl: py-128P 3xs:w-full 2xl:w-1/2">
+          <h1 class="3xs:text-xl xs:text-2xl sm:text-3xl leading-tight font-bold mb-16M 3xs:text-center 2xl:text-start 3xs:m-w-container-lg">
+            Stay productive, wherever you are
+          </h1>
 
-  Fylo has improved our team productivity by an order of magnitude. Since 
-  making the switch our team has become a well-oiled collaboration machine.
+          <p class="3xs:text-center 2xl:text-start mb-16M">
+            Never let location be an issue when accessing your files. Fylo has you 
+            covered for all of your file storage needs.
+          </p>
 
-  Kyle Burton
-  Founder & CEO, Huddle
+          <p class="3xs:text-center 2xl:text-start">
+            Securely share files and folders with friends, family and colleagues for 
+            live collaboration. No email attachments required!
+          </p>
 
-  Get early access today
+          <div class="flex gap-2 border-b-3BW border-moderate-cyan w-how 3xs:text-center 2xl:text-start 3xs:mx-auto 2xl:mx-0 my-32M">
+            <a href="#" class="text-moderate-cyan text-md">See how Fylo works</a>
+            <img class="" src="./images/icon-arrow.svg" alt="how fylo works">
+          </div>
 
-  It only takes a minute to sign up and our free starter tier is extremely generous. 
-  If you have any questions, our support team would be happy to help you.
+          <div class="text-start bg-white p-32P rounded-5BR 3xs:w-full 2xl:w-1/2">
+            <img class="mb-10M" src="./images/icon-quotes.svg" alt="quotes">
 
-  Get Started For Free
+            <p class="text-sm">
+              Fylo has improved our team productivity by an order of magnitude. Since 
+              making the switch our team has become a well-oiled collaboration machine.
+            </p>
 
-  Phone: +1-543-123-4567
-  example@fylo.com
+            <div class="mt-16M flex 3xs:flex-col 2xs:flex-row gap-4 relative 3xs:px-16P 2xs:px-48P m-w-container-3xs">
+              <img class="rounded-full w-32W 3xs:static 2xs:absolute left-0" src="./images/avatar-testimonial.jpg" alt="kyle">
+              <h2 class="text-sm flex flex-col leading-5">
+                <span class="font-bold">Kyle Burton</span>
+                <span class="text-xs">Founder & CEO, Huddle</span>
+              </h2>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
 
-  About Us
-  Jobs
-  Press
-  Blog
+    <!---- Section 3 ---->
+    <section class="bg-desaturated-blue text-white p-48P flex 3xs:flex-col lg:flex-row gap-10 3xs:text-center lg:text-start 3xs:justify-center lg:justify-between">
+      <div class="mb-32M 3xs:w-full lg:w-1/2">
+        <h2 class="3xs:text-md xs:text-lg sm:text-xl mb-16M font-bold">
+          Get early access today
+        </h2>
 
-  Contact Us
-  Terms
-  Privacy
+        <p>
+          It only takes a minute to sign up and our free starter tier is extremely generous. 
+          If you have any questions, our support team would be happy to help you.
+        </p>
+      </div>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+      <form class="flex flex-col 3xs:justify-center lg:justify-between gap-8 3xs:w-full lg:w-btn">
+        <input aria-label="put your email" class="border-1BW border-solid border-very-dark-blue p-16P text-red focus:outline-none focus:invalid:border-red focus:invalid:text-red placeholder-red px-24P rounded-5BR text-very-dark-blue 3xs:w-full" type="email" placeholder="email@example.com" />
+        <button class="p-16P text-white bg-bright-blue rounded-5BR font-semibold 3xs:text-lg lg:text-md 3xs:w-full lg:w-1/2" type="submit">Get Started For Free</button>
+      </form>
+    </section>
+
+  </main>
+  
+  <!-- Footer -->
+  <footer class="bg-very-dark-blue text-white px-32P 3xs:py-32P lg:py-128P flex 3xs:flex-col lg:flex-row justify-around gap-10">
+
+    <div class="flex flex-col gap-2 3xs:static lg:relative lg:bottom-64I">
+      <img class="w-how mb-10M" src="./images/logo2.svg" alt="fylo">
+
+      <div class="flex gap-4">
+        <img src="./images/icon-phone.svg" alt="phone">
+        <p class="text-sm">
+          Phone: +1-543-123-4567
+        </p>
+      </div>
+
+      <div class="flex gap-4">
+        <img src="./images/icon-email.svg" alt="email">
+        <p class="">
+          example@fylo.com
+        </p>
+      </div> 
+    </div>
+
+    <div class="flex flex-col gap-2">
+      <a href="#">About Us</a>
+      <a href="#">Jobs</a>
+      <a href="#">Press</a>
+      <a href="#">Blog</a>
+    </div>
+
+    <div class="flex flex-col gap-2">
+      <a href="#">Contact Us</a>
+      <a href="#">Terms</a>
+      <a href="#">Privacy</a>
+      <span aria-hidden="true" class="text-very-dark-blue pointer-events-none select-none" oncontextmenu="return false;">Nothing</span>
+    </div>
+
+    <div class="flex flex-row gap-4 justify-center items-center mb-32M">
+      <i class="fa-brands fa-facebook fa-2x"></i>
+      <i class="fa-brands fa-twitter fa-2x"></i>
+      <i class="fa-brands fa-instagram fa-2x"></i>
+    </div>
+
   </footer>
 </body>
 </html>
